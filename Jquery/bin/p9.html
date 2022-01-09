@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script>
+$(document).ready(function(){
+	$("chkmult").click(function(){
+		var firstno=$("#firstno").val();
+		var secondno=$("#secondno").val();
+		var result=firstno*secondno;
+		$("#result").val(result);
+	});
+})
+</script>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form id="frmcalc">
+<center>
+Firstname:
+<input type="text" name="firstno" id="firstno"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Secondname:
+<input type="text" name="secondno" id="secondno"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Result:
+<input type="text" name="result" id="result"/>
+<input type= "button" id="mult" value="mult"/>
+</center>
+</form>
+</body>
+</html>
